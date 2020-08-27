@@ -7,3 +7,8 @@ steps:
   commands:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
   - mvn test -B
+  settings:
+    username:
+      from_secret: username
+    password:
+      from_secret: password
